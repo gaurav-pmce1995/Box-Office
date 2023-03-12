@@ -1,0 +1,19 @@
+#id2{
+    text-align: center;
+    padding-top: 10px;
+    
+}
+#parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-inline-start: 30px;
+}
+#child{
+    /* text-align: center; */
+    margin-right: 80px;
+    /* display: grid; */
+}
+img{
+    border-radius: 15px;
+}

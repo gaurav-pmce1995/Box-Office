@@ -1,0 +1,17 @@
+<h4 id="id2">{{title}}</h4>
+<div>
+<input type="text" placeholder="Seach Movie" name="searchText" [(ngModel)] = "searchText">
+<input type="button" (click) = "search()" value="Go">
+<input type="button" (click) = "reset()" value = "Clear">
+</div>
+<div id="parent">
+    <div *ngFor="let m of movies" id="child">
+        <img src="{{m.url}}" width="200px" height="150px">
+        <div style="clear:left"></div>
+        <img src="{{m.url1}}" style="float: left;">
+        <span>{{m.rating}}</span>
+        <h3>{{m.movieTitle}}</h3>
+        <h4>{{m.genre}}</h4>
+        <h4>{{m.yearOfRelease}}</h4>
+    </div>
+</div>
